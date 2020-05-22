@@ -116,12 +116,12 @@ namespace POKE.App
 
         private static void ConfigureRepositoryDependancies(IServiceCollection services)
         {
-            services.AddTransient<IPlayerRepository, PlayerRepository>();
+            services.AddTransient<IPokemonRepository, PokemonRepository>();
         }
 
         private static void ConfigureServiceDependancies(IServiceCollection services)
         {
-            services.AddTransient<IPlayerService, PlayerService>();
+            services.AddTransient<IPokemonService, PokemonService>();
         }
 
         private static void ConfigureHelperDependancies(IServiceCollection services)

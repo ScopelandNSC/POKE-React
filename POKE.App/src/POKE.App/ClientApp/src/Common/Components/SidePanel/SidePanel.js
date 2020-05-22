@@ -4,6 +4,7 @@ import ArrowLeftIcon from '../../Icons/ArrowLeft';
 import useBooleanToggle from '../../Hooks/UseBooleanToggle'
 import { Button } from 'reactstrap';
 import './SidePanel.css';
+import PokemonService from '../../../Pokemons/Services/PokemonService';
 
 function SidePanel(props) {
 
@@ -26,6 +27,12 @@ function SidePanel(props) {
             <div>
 
             </div>
+            <Button onClick={
+                async () => {
+                    const pokemonService = new PokemonService();
+                    var pokemon = await pokemonService.getPokemon("eevee");
+                }
+            } />
 
         </div>
 

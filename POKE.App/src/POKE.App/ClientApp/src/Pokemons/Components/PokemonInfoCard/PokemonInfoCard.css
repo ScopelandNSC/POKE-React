@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  pokemon-info-card STYLES
+\*------------------------------------*/
+
+.pokemon-info-card {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    height: 270px;
+    width: 90px;
+    color: #6e6e6e;
+    justify-content: space-between;
+}
+
+
+.pokemon-info-card-number {
+    background-color: #fff;
+    border: none;
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    float:left;
+}
+
+.pokemon-info-card-name {
+    background-color: #fff;
+    border: none;
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    float: right;
+}

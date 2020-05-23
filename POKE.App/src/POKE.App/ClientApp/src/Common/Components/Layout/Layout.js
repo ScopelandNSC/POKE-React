@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import HeaderBar from '../HeaderBar/HeaderBar'
 import SidePanel from '../SidePanel/SidePanel'
+import PokemonInfoCard from '../../../Pokemons/Components/PokemonInfoCard/PokemonInfoCard'
 import './Layout.css'
 
 export class Layout extends Component {
@@ -18,7 +19,9 @@ export class Layout extends Component {
                     sidepanelOpen={true}
                 />
                 <Container className={true ? 'rd-container' : 'rd-container rd-container--sidepanel-hidden'}>
-                    {this.props.children}
+                    <PokemonInfoCard
+                        pokemonName="eevee"
+                    />
                 </Container>
             </div>
         );
